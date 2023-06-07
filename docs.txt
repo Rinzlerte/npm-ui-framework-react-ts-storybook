@@ -1,0 +1,19 @@
+1  npm i -D typescript ts-loader
+2 npm i -D react react-dom @types/react
+3 add "peerDependencies": {
+    "react": "*",
+    "react-dom": "*"
+}
+
+4 add tscongig file
+4.a npm i -D style-loader css-loader
+5 npm i -D webpack webpack-cli
+6 add webpack.config.js
+6.a  npx webpack -creating dev dir with name dist
+7 package.json edit..    "files": ["dist"]  .   "main": "./dist/index.js",
+
+8 add publish script to rebuild and publish this lib
+
+9 init storybook npx storybook@latest init //2023
+
+10 exsclude stories   "exclude": ["node_modules", "dist", "./src/stories"]
